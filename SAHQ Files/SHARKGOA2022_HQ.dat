@@ -1,0 +1,116 @@
+#Stock Assessment Results Archive (SARA) file for stocks managed under the North Pacific Fisheries Management Council
+#This form is only required for Tier 1-6 stocks in a full year, or Tier 1-3 stocks in a partial year 
+#There are four required sections to update: Assessment Summary, Fishing Mortality Estimates, Biomass Estimates, and Time Series Estimates with an optional fifth Survey Estimates section 
+#Please fill in the text (surrounded by " ") or data as values in the line after each field marked with a # and capitalized name (e.g., #STOCK, the next line should be "ATF") 
+#Note that several of the fields below may be static or only change occasionally, please see the SARA_HQ_Lookup Google sheet for more details
+#ASSESSMENT_SUMMARY -------------------------------------------------------------------------------------------------
+#STOCK - identifier key for joining SARA data, see lookup table for key code
+"SHARK"
+#STOCK_NAME - Entity name of stock for Species Information System (SIS), see lookup table, if stock does not exist in list, contact Kalei Shotwell or Jim Ianelli
+"shark complex bsai"
+#REGION - General area of assessment for stock, go to lookup table  
+"BSAI"
+#ASMT_TYPE - Classification of the effort and products of the stock assessment process (options: Research, Operational, Research and Operational, Stock Monitoring Updates; NOTE: NPFMC Full assessment = Operational, Partial = Stock Monitoring Updates)
+"Operational"
+#ASMT_YEAR - Year when assessment completes its final technical review by NPFMC (options: 1983 to current year)
+2022
+#ASMT_MONTH - Month when assessment completes its final technical review by NPFMC (options: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+"Dec"
+#TIER - Assessment tier for the stock (options: 1a, 1b, 2a, 2b, 3a, 3b, 4, 5, 6; NOTE: no stock assessment should be conducted for Tiers 4, 5, or 6, on off-cycle years)  
+"6"
+#NUM_SEXES - Number of sexes if 1 sex=ALL elseif 2 sex=(FEMALE MALE)    
+1          
+#NUM_FISHERIES - Number of fisheries    
+1
+#REC_MULT - Multiplier for recruitment N at age and survey number (options: 1, 1000, 1000000)
+1
+#RECAGE - Recruitment age used by model or size
+1       
+#COMPLEX - Is this a stock complex? (options: Yes, NA) 
+"Yes"
+#LAST_DATA_YEAR - Last year of input data included in the assessment
+2022
+#ASMT_MODEL_CATEGORY - Category of stock assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 1 - Data-Limited, 2 - Index-Based, 3 - Aggregate Biomass Dynamics, 4 - Virtual Population Dynamics, 5 - Statistical Catch-at-length, 6 - Statistical Catch-at-Age)
+"None - historical average catch"
+#ASMT_MODEL - Data model accepted by the scientific review process and used to complete the stock assessment, see lookup table (options dependent on ASMT_MODEL_CATEGORY choice: if select 1, then options = Catch Only, DB-SRA: Depletion-Based Stock Reduction Analysis, DCAC: Depletion Corrected Average Catch, Mean Length, or write-in; if select 2, then options = AIM: An Index Method, Catch Only, Index Method, Survey Abudance; if select 3, then options = ASPIC: A Stock Production Model Incorporating Covariates, BSP: Bayesian Surplus Production Model, BSP-PIFSC; PIFSC Bayesian Surplus Production Model, CSA(Collie Sissenwine): Catch-Survey Analysis, KLAMZ, Schaefer, or write-in; if select 4, then options = ADAPT: Adaptive Framework VPA, VPA-2BOX, Dual Zone Virtual Population Analysis, VPA Shrimp: Shrimp Virtual Population Analysis, or write-in; if select 5, then options = A-SCALA: Age-Structured Statistical Catch-at-Length, BAM-Length: Beaufort Statistical Catch-at-Length Model, CASA: Catch-at-Size Analysis, Custom SCAL: Custom Statistical Catch-at-Length Model, GMACS: General Model for Alaska Crab Stocks, Multifan-CL, SCALE: Statistical Catch-At-LEngth, SS: Stock Synthesis, or write-in; if select 6, then options = AMAK: Assessment Model for Alaska, ASAP: Age-Structured Assessment Program, ASMP: Age-Structured Production Model, BAM: Beaufort Assessment Model, CASAL: C++ Algorithmic Stock Assessment Library, Coleraine, Custom SCAA: Custom Statistical Catch-at-Age Model, Multifan-CL, PSC Chinook Model, SS: Stock Synthesis, if "NA", then "None - historical catch" or write-in)
+
+#MODEL_VERSION - Version of the assessment model accepted by the scientific review process and used to complete the stock assessment
+"11.0"
+#ENSEMBLE - Does the final assessment configuration utilize multimodel inferencing, either in the form of some type of model averaging, or ensemble modeling methods? (options: Yes, NA) Please provide additional details in the comments section. 
+"NA"
+#LEAD_LAB - NMFS Laboratory or outside agency with lead responsibility for the stock assessment
+"AFSC"
+#POC_EMAIL - Full name of person to contact with questions regarding the assessment (must be in email format)
+"cindy.tribuzio@noaa.gov"
+#REVIEW_RESULT - Result of the assessment review after final technical review by NPFMC (options: NA, Not Reviewed, Accept prevoius approach remand new attmept, Full acceptance, Partial acceptance - Fishing mortality estimates, Partial acceptance - Biomass estimates, Partial acceptance - Status determinations only, Reject - Data insufficient for assessment, Reject - Results too uncertain to be considered adequate, Remand)
+"Full acceptance"
+#CATCH_INPUT_DATA - Categorical level of catch input data used in the assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 0 - None, 1 - Major gaps preclude use, 2 - Major gaps in some sectors(s), 3 - Minor gaps across sectors, 4 - Minor gaps in some sector(s), 5 - Near complete knowledge)
+2
+#ABUNDANCE_INPUT_DATA - Categorical level of abundance input data used in the assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 0 - None, 1 - Uncertain or expert opinion, 2 - Standardized fishery-dependent, 3 - Limited fishery-independent, 4 - Comprehensive fishery-independent, 5 - Absolute abundance)
+0
+#BIOLOGICAL_INPUT_DATA - Categorical level of biological or life history input data used in the assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 0 - None, 1 - Proxy-based, 2 - Empirical and proxy-based, 3 - Mostly empirical estimates, 4 - Track changes over time, 5 - Comprehensive over time and space)
+0
+#SIZEAGE_COMP_INPUT_DATA - Categorical level of size or age composition input data used in the assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 0 - None, 1 - Major gaps preclude use, 2 - Suport data-limited only, 3 - Gaps, bus supports age-structured assessment, 4 - Support fishery composition, 5 - Very complete)
+0
+#ECOSYSTEM_LINKAGE - Categorical level of ecosystem linkage used in the assessment model accepted for use in management, as described in Appendix A of the 2018 Next Gen SAIP document, see lookup table (options: 0 - None, 1 - Informative or used to process input data, 2 - Random variation, not mechanistic, 3 - Direct linkages(s), 4 - Linkage(s) informed by process studies, 5 - Fully coupled
+0
+#FISHING_MORTALITY_ESTIMATES ----------------------------------------------------------------------------------------
+#F_YEAR - Year of fishing mortality rates (NOTE: report the most recent full year of fishing, should be current year-1, regardless of ASMT_TYPE)  
+“2021”
+#F_BASIS - Basis for fishing mortality estimates, F rate or total catch estimates, see lookup table (options: Max F @ Age, F for Fully-Selected Fish, Catch / Biomass, Catch / Exploitable Biomass, Catch, Fishing Intensity, True F, or write-in)
+"Catch"
+#F_UNIT - The unit of the "F" related data fields, see lookup table (options: Apical F, Fully-selected F, Exploitation Rate, Relative F, Metric Tons, 1 - SPR, F = Z - M, or write-in)
+"Metric Tons"
+#BEST_F_ESTIMATE - Best available point estimate of fishing mortality rate or total catch used to determine the rate of fishing. This field is used when a point estimate is available. NOTE: for Tiers 1-3, this is the estimate of total fishing mortality from the most recent full year of fishing; for Tiers 4-5 this is exploitation rate (catch divided by total abundance from the random effects model) for the most recent full year of fishing; for Tier 6 this is total catch.  
+155
+#F_LIMIT - Fishing mortality rate or total catch threshold, above which the stock is considered to be overfishing. NOTE: For Tiers 1-3 during a full or operational assessment this is the reverse engineered F from this year's accepted model that would have produced a catch for last year equal to last year’s OFL. For Tiers 1-3 during a partial assessment this is FMSY. For Tiers 4-5, single stock assessment, this is the estimate of M. For Tiers 4-5 stock complex assessments or Tier 6, this is sum of the OFL in tons for the stocks in the complex.
+570
+#F_LIMIT_BASIS - Basis for the Flimit estimate, see lookup table. F rate (F35%, etc.) or total catch estimate (options: Fmsy, Frebuild, M, F30% as proxy, F35% as proxy, F40% as proxy, or write-in)
+"Total catch estimate"
+#F_MSY - Fishing mortality rate that, on average, would produce the maximum sustainable yield from a stock that has a size of BMSY(e.g. F35%, or FOFL). NOTE: For Tiers 1b, 2b, or 3b this should be the unadjusted estimate of FOFL. 
+“NA”
+#F_MSY_BASIS - Basis for the Fmsy estimate, see lookup table (options: F40% as proxy, F35% as proxy, F30% as proxy, Direct estmate, F = M, or write-in)
+“NA"
+#BIOMASS_ESTIMATES --------------------------------------------------------------------------------------------------
+#B_YEAR - Year of biomass estimate (NOTE: if ASMT_TYPE = Operational, then B_YEAR = ASMT_YEAR, otherwise this is the year of the last operational or full assessment). 
+“NA”
+#B_BASIS - Basis for the biomass estimate, see lookup table (options: Spawning Stock Biomass, Total Stock Biomass, Survey-Estimated Biomass, Escapement, Stock Reproductive Output, Survey Index, Total Stock Abundance, or write-in)
+"NA"
+#B_UNIT - The unit of the "B" related data fields, see lookup table (options: Metric Tons, Thousand Metric Tons, Number of eggs, kg/tow, Number of Fish, or write-in)
+"NA"
+#BEST_B_ESTIMATE - Best available point estimate of stock size in terms of biomass from the stock assessment model (NOTE: for Tiers 1-3 this is the spawning biomass estimate in B_YEAR, for Tiers 4-5 single stock assessments this is the random effects biomass estimate in B_YEAR, for Tiers 4-5 complex stock assessments this is the combined biomass estimate from the random effects model for the stock complex in B_YEAR, "NA" for Tier 6)
+"NA"
+#LOWER_B_ESTIMATE - Minimum plausible value of B as estimated by the model given the specified confidence interval for spawning biomass in B_YEAR (Tiers 1-3 only)
+"NA"
+#UPPER_B_ESTIMATE - Maximum plausible value of B as estimated by the model given the specified confidence interval for spawning biomass in B_YEAR (Tiers 1-3 only)
+"NA"
+#ESTIMATE_METHOD - Specify statistical approach used to determine confidence intervals if provide (options: Asymptotic, Credible, Bootstrapped, Tiers 1-3 only)
+"NA"
+#INTERVAL_SIZE - Specify size of confidence interval (options: 50 to 99, Tiers 1-3 only)
+“NA”
+#B_MSY - Stock size that, on average, would produce MSY when it is fished at a level that is equal to F_MSY (Tiers 1-3 only)
+“NA”
+#B_MSY_BASIS - Basis for B_MSY estimate, see lookup table (options: Direct estimate, S_MSY escapement, Average Survey CPUE, B40%, B35%, B30%, Tiers 1-3 only)
+"NA"
+#TIME_SERIES_ESTIMATES ----------------------------------------------------------------------------------------------
+#FISHERYYEAR - list years used in the model 
+1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	2021	2022
+#AGE - list of ages used in the model where applicable
+“NA”	
+#RECRUITMENT - Number of recruits by year (Tiers 1-3 only) 
+“NA”	
+#SPAWNBIOMASS - Spawning biomass by year in metric tons (Tiers 1-3 only)
+“NA”	
+#TOTALBIOMASS - Total biomass by year in metric tons ("NA" for Tier 6)
+"NA"
+#TOTFSHRYMORT - Fishing mortality rate by year (Tiers 1-3 only)
+“NA”	
+#TOTALCATCH - Total catch by year in metric tons 
+383 1524 722 719 359 310 358 361 610 369 543 85 89 287 37 242 106 247 442 170 163 280 121 141 155 170 
+#SURVEYDESC - List primary surveys used in the assessment, use space then quotes to separate, see lookup table ("NA" for Tier 6)
+"NA"
+#STOCKNOTES - statement on stock status
+"SAFE report indicates that this stock complex was not subjected to overfishing in 2021."
+#SURVEY_ESTIMATES [OPTIONAL] ------------------------------------------------------------------------------------------
+#"Gulf of Alaska Shelf and Slope Groundfish Bottom Trawl" - should match name of survey description listed in TIME_SERIES_ESTIMATES, fill in missing years from FISHERYYEAR with NA
+"NA"

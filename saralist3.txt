@@ -1,0 +1,8 @@
+#Stock Assessment Results Archive (SARA) file for stocks managed under the North Pacific Fisheries Management Council
+#ASSESSMENT_SUMMARY -------------------------------------------------------------------------------------------------
+#STOCK - Short code for stock name, part of unique identifier key for joining SARA data, see lookup table for name code
+POP
+#STOCK_NAME - Entity name of stock for Species Information System (SIS), see lookup table, if stock does not exist in list, contact Kalei Shotwell or Jim Ianelli
+Pacific ocean perch - Bering Sea / Aleutian Islands
+#REGION - General area of assessment for stock, part of unique identifier key, go to lookup table
+BSAI
